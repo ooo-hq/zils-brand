@@ -1,0 +1,62 @@
+/* Zils brand tokens. Source: zils-web app/global.css (.zs), 18 Oct 2026 rebrand spec, section 3.2.
+   Dark is the default. Light applies under [data-theme="light"]. */
+:root {
+  /* Surfaces */
+  --zils-gutter: #0f0f13;   /* page sides, footer, nav */
+  --zils-panel: #18191e;    /* content column */
+  --zils-raised: #1d1e24;   /* consoles, cards, hover rows */
+  --zils-line: rgba(255, 255, 255, 0.07);
+
+  /* Text */
+  --zils-text-1: #e8e6ef;                     /* headings, key numbers */
+  --zils-text-2: rgba(232, 230, 239, 0.58);   /* body */
+  --zils-text-3: rgba(232, 230, 239, 0.54);   /* labels, captions */
+
+  /* Brand */
+  --zils-logo: #8f88ff;     /* wordmark on dark */
+  --zils-orange: #ff7a2f;   /* the one primary button, LIVE, corner markers, focus */
+  --zils-peach: #f2a184;    /* collapsed-row +/−, warm accents */
+  --zils-lilac: #c3b4f6;
+  --zils-peri: #a9b5f2;     /* links and cool accents in text */
+  --zils-bad: #ff8f6b;      /* errors and failed states */
+
+  /* The spectrum: blocks, bars, icon tiles, large numerals. Never a page background. */
+  --zils-spectrum: linear-gradient(90deg, #ef8d5a 0%, #d9a08c 18%, #cfa2e4 42%, #c3b4f6 64%, #a9b5f2 82%, #8ea6ff 100%);
+  --zils-spectrum-text: var(--zils-spectrum);
+
+  /* Answer lanes: an answer has the same color wherever it appears. */
+  --zils-lane-billing: #f08a4b;
+  --zils-lane-spam: #e7a58f;
+  --zils-lane-account: #d7a6e8;
+  --zils-lane-tech: #c3b2f6;
+  --zils-lane-sales: #a9b5f2;
+  --zils-lane-review: #8ea6ff;
+
+  /* Type */
+  --zils-font-logo: 'Grenze Gotisch', serif;                  /* the wordmark only */
+  --zils-font-sans: 'Inter Tight', system-ui, sans-serif;     /* headings 300, body 400 */
+  --zils-font-mono: 'IBM Plex Mono', ui-monospace, monospace; /* labels, nav, buttons, data */
+
+  /* Layout */
+  --zils-gutter-width: 56px;   /* 0 below 900 px */
+  --zils-section-row: 40px;
+}
+
+[data-theme='light'] {
+  --zils-gutter: #ecebf1;
+  --zils-panel: #faf9fc;
+  --zils-raised: #f1eff6;
+  --zils-line: rgba(28, 26, 38, 0.1);
+  --zils-text-1: #1c1a26;
+  --zils-text-2: rgba(28, 26, 38, 0.7);
+  --zils-text-3: rgba(28, 26, 38, 0.64);
+  --zils-logo: #4b44c8;
+  /* Deeper accents so text in these colors reaches WCAG AA on every light surface. */
+  --zils-orange: #ab4d25;
+  --zils-peach: #ab4d25;
+  --zils-lilac: #6a59cc;
+  --zils-peri: #4a5fc4;
+  --zils-bad: #b4452a;
+  /* Same hues as the spectrum, deepened so gradient text reaches 3:1 on every light surface. */
+  --zils-spectrum-text: linear-gradient(90deg, #b86d45 0%, #a17668 18%, #9575a4 42%, #857aa7 64%, #757da7 82%, #6a7cbf 100%);
+}

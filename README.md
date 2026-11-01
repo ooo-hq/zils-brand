@@ -51,6 +51,10 @@ Use it for blocks, bars and large numbers, not as a full background.
 
 All three fonts are free on Google Fonts.
 
+## Building an interface
+
+[`SYSTEM.md`](SYSTEM.md) describes how Zils interfaces look: surfaces, color roles in dark and light mode, type sizes, components and motion. [`tokens/tokens.css`](tokens/tokens.css) and [`tokens/tokens.json`](tokens/tokens.json) hold the exact values. Coding agents should start with [`AGENTS.md`](AGENTS.md).
+
 ## License
 
 The logo is a trademark of Zils. You may use these files to refer to Zils, for example in articles, integrations or partner pages. Don't use them in a way that suggests Zils endorses you without permission.
